@@ -1,0 +1,21 @@
+.env
+
+# Ignore Python bytecode
+__pycache__/
+*.pyc
+
+# Ignore log files
+*.log
+
+# Ignore virtual environment directories
+venv/
+env/
+
+# Ignore IDE-specific files (e.g., PyCharm)
+.idea/
+*.iml
+
+
+sql_connect.py
+
+In_progress
