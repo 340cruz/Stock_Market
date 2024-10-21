@@ -6,7 +6,7 @@ database = 'STOCK_MARKET'
 conn = connect_to_stock_db(database)
 cursor = conn.cursor()
 
-df = pd.read_excel("C:\\Users\\legai\\documents\\all_stocks.xlsx", sheet_name='Full')
+df = pd.read_excel("DATA/all_stocks.xlsx", sheet_name='Full')
 df['IPOYear'] = df['IPOYear'].astype('Int64').astype(str).replace('<NA>', None)
 df['Sector'] = df['Sector'].replace({np.nan: None})
 df['Industry'] = df['Industry'].replace({np.nan: None})
