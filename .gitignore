@@ -17,7 +17,10 @@ env/
 
 
 sql_connect.py
+sqlalch_connect_to_db
 
 In_progress
 maintenance_scripts
 Depracated_Files
+
+data/submissions.zip

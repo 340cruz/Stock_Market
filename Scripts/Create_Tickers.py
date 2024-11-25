@@ -15,9 +15,7 @@ with open(json_file_path) as f:
 
 ticker_df = pd.DataFrame(data["data"], columns=data["fields"])
 ticker_df['cik'] = ticker_df['cik'].astype(str).str.replace('.00000$', '', regex=True).str.zfill(10)
-# ticket_df['IPOYear'] = ticket_df['IPOYear'].astype('Int64').astype(str).replace('<NA>', None)
-# ticker_df['Sector'] = ticker_df['Sector'].replace({np.nan: None})
-# ticker_df['Industry'] = ticker_df['Industry'].replace({np.nan: None})
+
 
 for index, row in ticker_df.iterrows():
     cursor.execute("INSERT INTO all_stocks (ticker, CIK ,name, Exchange)"
